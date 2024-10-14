@@ -29,6 +29,10 @@ a {
     color: inherit;
 }
 
+ul {
+    list-style-type: none;
+}
+
 /* COMMON */
 /* Layout */
 .container {
@@ -88,9 +92,23 @@ hr {
     display: none;
 }
 
+/* Banner Section */
 .banner-section {
     display: none;
 }
+
+/* Footer Section */
+.footer {
+    background-color: var(--footer-bg);
+}
+
+.footer-right ul {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 768px) {
@@ -164,5 +182,16 @@ hr {
     /* Banner Section */
     .banner-section {
         display: block;
+    }
+
+    /* Footer Section */
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-right ul {
+        gap: 10px;
     }
 }
