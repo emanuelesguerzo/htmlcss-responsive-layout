@@ -13,7 +13,6 @@
     --pinter-yt-color: #e62222;
 }
 
-
 /* RESET */
 * {
     margin: 0;
@@ -53,12 +52,17 @@ ul {
 	display: table;
 }
 
+/* Typography */
+html {
+    font-size: 14px;
+}
+
 /* HEADER */
 .header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60px;
+    height: 40px;
     background-color: var(--main-white);
 }
 
@@ -76,48 +80,53 @@ hr {
 
 /* MAIN */
 /* Recipe Section */
-.hidden {
-    display: none;
+/* Title Block */
+.category {
+    text-transform: uppercase;
+    color: var(--main-gray);
+    padding: 10px 0 5px ;
+    font-size: 0.9rem;
+}
+
+.recipe-title h3 {
+    font-size: 1.4rem;
+    font-weight: 800;
+    padding-bottom: 10px;
+    color: var(--title-color);
+}
+
+/* Video Block */
+iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    margin-bottom: -10px;
+}
+
+/* Text Block */
+.text-block {
+    padding: 0 20px 20px;
+    background-color: var(--main-white);
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
 }
 
 h4 {
     padding: 20px 0;
 }
 
-/* Video Block */
-iframe {
-    width: 100%;
-    margin-bottom: -10px;
-}
-
-/* Title Block */
-.category {
-    text-transform: uppercase;
-    color: var(--main-gray);
-    padding: 10px 0;
-}
-
-.recipe-title h3 {
-    font-size: 1.4rem;
-    padding-bottom: 10px;
-    color: var(--title-color);
-}
-
-/* Text Block */
-.text-block {
-    padding: 0 20px;
-    background-color: var(--main-white);
-}
-
 .info {
     padding-bottom: 10px;
+}
+
+.hidden {
+    display: none;
 }
 
 /* Social Links Section */
 .social-links {
     display: flex;
     justify-content: space-evenly;
-    padding: 20px 0;
+    padding: 30px 0;
 }
 
 .link a {
@@ -129,7 +138,7 @@ iframe {
     border-radius: 15px;
     font-size: 0.9rem;
     background-color: var(--main-white);
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
 }
 
 .facebook i {
@@ -174,7 +183,8 @@ h2 {
 }
 
 .presentation .presentation-img {
-    width: 50%;
+    width: 60%;
+    padding-bottom: 10px;
 }
 
 .presentation-text {
@@ -186,9 +196,6 @@ h2 {
     background-color: var(--footer-bg);
     color: var(--main-white);
     padding-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .footer-left .company {
@@ -203,7 +210,7 @@ h2 {
 }
 
 address {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     padding-bottom: 20px;
 }
 
@@ -219,22 +226,24 @@ address {
     font-size: 0.9rem;
 }
 
-
 /* MEDIA QUERIES */
+/* Large Mobile */
 @media screen and (min-width: 576px) and (max-width: 768px) {
-    /* Recipe Section */
-    iframe {
-        height: 400px;
+    /* Typography */
+    html {
+        font-size: 15px;
     }
 
     /* Social Links Section */
     .link a {
         width: 100px;
     }
+
     /* Presentation Section */
     .presentation {
         display: block;
     }
+
     .presentation-img {
         float: left;
         width: 30%;
@@ -244,6 +253,11 @@ address {
 
 /* Tablet */
 @media screen and (min-width: 768px) {
+    /* Typograhy */
+    html {
+        font-size: 16px;
+    }
+
     /* COMMON */
     /* Layout */
     .container {
@@ -261,7 +275,7 @@ address {
     /* MAIN */
     /* Recipe Section */
     .hidden {
-    display: block;
+        display: block;
     }
 
     .recipe-title h3 {
@@ -289,7 +303,7 @@ address {
 
     /* Social Links Section */
     .link a {
-        width: 120px;
+        width: 110px;
     }
 
     /* Banner Section */
@@ -301,6 +315,7 @@ address {
     .presentation {
         display: block;
     }
+
     .presentation-img {
         float: left;
         width: 30%;
@@ -314,6 +329,11 @@ address {
 
 /* Desktop */
 @media screen and (min-width: 992px) {
+    /* Typograhy */
+    html {
+        font-size: 18px;
+    }
+    
     /* COMMON */
     /* Layout */
     .container {
@@ -361,9 +381,18 @@ address {
         margin-right: 6px;
     }
 
+    .link a {
+        width: 140px;
+    }
+
     /* Banner Section */
     .banner-section {
         display: block;
+    }
+
+    /* Presentation Section */
+    .presentation .presentation-img {
+        width: 30%;
     }
 
     /* Footer Section */
@@ -376,7 +405,6 @@ address {
 
     .footer-left {
         width: 40%;
-        vertical-align: middle;
     }
 
     .footer-left .company {
@@ -386,11 +414,13 @@ address {
 
     .footer-right {
         width: 60%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
     }
 
     .footer-right ul {
-        gap: 20px;
-        justify-content: flex-end;
+        gap: 25px; 
     }
 
     .address {
