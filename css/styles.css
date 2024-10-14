@@ -4,6 +4,7 @@
     --footer-bg: #7c69a4;
     --hr-color: #f7972e; 
     --main-bg: #f6f5f3;
+    --main-white: #ffffff;
 }
 
 
@@ -20,4 +21,44 @@ img {
 
 body {
     background-color: var(--main-bg);
+}
+
+/* COMMON */
+/* Layout */
+.container {
+    width: 100%;
+    padding: 0 20px;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: var(--main-white);
+}
+
+h1 {
+    font-family: "Nerko One", serif;
+    color: var(--page-title);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.3); 
+    text-transform: uppercase;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px) {
+    /* HEADER */
+    .header {
+        justify-content: flex-start;
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    /* HEADER */
+    .header {
+        justify-content: flex-start;
+        padding: 10px;
+    }
 }
