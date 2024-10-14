@@ -7,6 +7,10 @@
     --main-white: #ffffff;
     --main-gray: #999999;
     --title-color: #4e3969;
+    --fb-color: #1a77f3;
+    --twitter-color: #009eff;
+    --insta-color: #e15b8d;
+    --pinter-yt-color: #e62222;
 }
 
 
@@ -77,7 +81,7 @@ h4 {
 /* Video Block */
 iframe {
     width: 100%;
-    height: 100%;
+    /* height: 200px; */
     margin-bottom: -10px;
 }
 
@@ -115,10 +119,29 @@ iframe {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30px;
+    width: 35px;
     height: 30px;
     border-radius: 15px;
-    border: 1px solid black;
+    font-size: 0.9rem;
+    background-color: var(--main-white);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.facebook i {
+    color: var(--fb-color);
+}
+
+.twitter i {
+    color: var(--twitter-color);
+}
+
+.instagram i {
+    color: var(--insta-color);
+}
+
+.pinterest i,
+.youtube i {
+    color: var(--pinter-yt-color);
 }
 
 .hidden-links {
@@ -167,6 +190,10 @@ iframe {
         flex-wrap: wrap;
     }
 
+    iframe {
+        height: 400px;
+    }
+
     .info {
         width: calc(100% / 3);
         padding-bottom: 30px;
@@ -174,6 +201,11 @@ iframe {
 
     h4 {
         padding-bottom: 30px;
+    }
+
+    /* Social Links Section */
+    .link a {
+        width: 120px;
     }
 
     /* Banner Section */
@@ -206,7 +238,7 @@ iframe {
     /* MAIN */
     /* Recipe Section */
     .hidden {
-    display: inline-block;
+        display: inline-block;
     }
 
     .card {
@@ -223,12 +255,17 @@ iframe {
 
     .info {
         width: 100%;
-        padding-bottom: 20px;
     }
 
     /* Social Links Section */
     .hidden-links {
         display: block;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    .link a i {
+        margin-right: 6px;
     }
 
     /* Banner Section */
