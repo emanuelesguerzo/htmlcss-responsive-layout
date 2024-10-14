@@ -21,6 +21,12 @@ img {
 
 body {
     background-color: var(--main-bg);
+    font-family: "Montserrat", serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* COMMON */
@@ -46,6 +52,25 @@ h1 {
     text-transform: uppercase;
 }
 
+/* MAIN */
+/* Recipe Section */
+.hidden {
+    display: none;
+}
+
+.card {
+    /* debug */
+    min-height: 300px;
+    background-color: #7c69a4;
+}
+
+/* Social Links Section */
+.social-links {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
 /* MEDIA QUERIES */
 @media screen and (min-width: 768px) {
     /* HEADER */
@@ -53,12 +78,50 @@ h1 {
         justify-content: flex-start;
         padding: 10px;
     }
+
+    /* MAIN */
+    /* Recipe Section */
+    .hidden {
+    display: inline-block;
+    }
+
+    .info-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .info {
+        width: calc(100% / 3);
+    }
 }
 
 @media screen and (min-width: 992px) {
+    /* COMMON */
+    /* Layout */
+    .container {
+        width: 80%;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
     /* HEADER */
     .header {
         justify-content: flex-start;
         padding: 10px;
+    }
+
+    /* MAIN */
+    /* Recipe Section */
+    .hidden {
+    display: inline-block;
+    }
+
+    .card {
+        display: flex;
+    }
+
+    .info-list {
+        display: block;
+        
     }
 }
