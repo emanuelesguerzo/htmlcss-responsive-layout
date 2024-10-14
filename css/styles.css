@@ -1,0 +1,23 @@
+/* Custom Properties */
+:root {
+    --page-title: #ff9614;
+    --footer-bg: #7c69a4;
+    --hr-color: #f7972e; 
+    --main-bg: #f6f5f3;
+}
+
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: var(--main-bg);
+}
