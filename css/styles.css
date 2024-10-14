@@ -83,6 +83,10 @@ h1 {
     display: none;
 }
 
+.banner-section {
+    display: none;
+}
+
 /* MEDIA QUERIES */
 @media screen and (min-width: 768px) {
     /* HEADER */
@@ -94,7 +98,7 @@ h1 {
     /* MAIN */
     /* Recipe Section */
     .hidden {
-    display: inline-block;
+    display: block;
     }
 
     .info-list {
@@ -104,6 +108,11 @@ h1 {
 
     .info {
         width: calc(100% / 3);
+    }
+
+    /* Banner Section */
+    .banner-section {
+        display: block;
     }
 }
 
@@ -136,7 +145,13 @@ h1 {
         display: block;
     }
 
+    /* Social Links Section */
     .hidden-links {
+        display: block;
+    }
+
+    /* Banner Section */
+    .banner-section {
         display: block;
     }
 }
