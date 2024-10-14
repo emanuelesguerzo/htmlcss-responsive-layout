@@ -364,6 +364,7 @@ address {
 
     .text-block {
         width: 30%;
+        height: 400px;
     }
 
     .info {
