@@ -68,7 +68,19 @@ h1 {
 .social-links {
     display: flex;
     justify-content: space-evenly;
+    padding: 20px 0;
 
+    /* debug */
+    border: 1px dashed black;
+}
+
+.link {
+    /* debug */
+    border: 1px dashed black;
+}
+
+.hidden-links {
+    display: none;
 }
 
 /* MEDIA QUERIES */
@@ -122,6 +134,9 @@ h1 {
 
     .info-list {
         display: block;
-        
+    }
+
+    .hidden-links {
+        display: block;
     }
 }
