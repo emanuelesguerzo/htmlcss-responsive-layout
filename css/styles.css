@@ -68,6 +68,7 @@ html {
 
 h1 {
     font-family: "Nerko One", serif;
+    font-size: 2rem;
     color: var(--page-title);
     text-shadow: 1px 1px rgba(0, 0, 0, 0.3); 
     text-transform: uppercase;
@@ -123,22 +124,21 @@ h4 {
 }
 
 /* Social Links Section */
-.social-links {
+.social-list {
+    padding: 40px 0;
     display: flex;
-    justify-content: space-evenly;
-    padding: 30px 0;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
 }
 
-.link a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 35px;
-    height: 30px;
-    border-radius: 15px;
-    font-size: 0.9rem;
+.social-list li {
+    padding: 8px 12px;
     background-color: var(--main-white);
+    border-radius: 20px;
     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
 }
 
 .facebook i {
@@ -234,11 +234,6 @@ address {
         font-size: 15px;
     }
 
-    /* Social Links Section */
-    .link a {
-        width: 100px;
-    }
-
     /* Presentation Section */
     .presentation {
         display: block;
@@ -299,11 +294,6 @@ address {
 
     h4 {
         padding-bottom: 30px;
-    }
-
-    /* Social Links Section */
-    .link a {
-        width: 110px;
     }
 
     /* Banner Section */
@@ -373,17 +363,9 @@ address {
 
     /* Social Links Section */
     .hidden-links {
-        display: block;
+        display: inline;
         text-transform: uppercase;
         font-weight: 600;
-    }
-
-    .link a i {
-        margin-right: 6px;
-    }
-
-    .link a {
-        width: 140px;
     }
 
     /* Banner Section */
